@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>BLACKBELT - STGO CHILE</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="description" content="Agencia chilena de marketing y producción de software web en Santiago de Chile, especializada en servicios personalizados para potenciar tu negocio.">
+    <meta name="keywords" content="Agencia de marketing, producción web, software, servicios personalizados, Santiago de Chile, Chile">
+    <meta name="author" content="BlackBelt">
+    <meta property="og:title" content="Agencia de Marketing y Producción Web - Santiago de Chile">
+    <meta property="og:description" content="Especializados en servicios personalizados de marketing y desarrollo web en Santiago de Chile.">
+    <meta property="og:image" content="logo.webp">
+    <meta property="og:url" content="https://www.blackbelt.cl">
+    <meta property="og:type" content="website">
+    <style>
+        body {
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            width: 95%;
+            margin: auto;
+        }
+        .fade-in {
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+        .fade-in.logo {
+            animation: fadeInLogo 5s forwards;
+        }
+        .fade-in.delay-separator0 {
+            animation: fadeIn 2s forwards;
+            animation-delay: 2s;
+        }
+        .fade-in.delay-link1 {
+            animation: fadeIn 2s forwards;
+            animation-delay: 3s;
+        }
+        .fade-in.delay-separator {
+            animation: fadeIn 2s forwards;
+            animation-delay: 4s;
+        }
+        .fade-in.delay-link2 {
+            animation: fadeIn 2s forwards;
+            animation-delay: 5s;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes fadeInLogo {
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes breathing {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .links {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+        .links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.5em;
+            margin-right: 20px;
+            transition: transform 0.2s;
+        }
+        .links a:hover,
+        .links a:active {
+            transform: scale(1.1);
+        }
+        .link-text {
+            display: inline-block;
+            animation: breathing 4s ease-in-out infinite;
+            animation-delay: calc(var(--animation-delay) + 2s);
+        }
+        .separator {
+            color: #ffffff;
+            font-size: 1.5em;
+            margin-right: 20px;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+        .delay-separator0 {
+            animation-delay: 2s;
+        }
+        .delay-separator {
+            animation-delay: 4s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.webp" alt="Logo" class="fade-in logo">
+        <div class="links">
+            <span class="separator fade-in delay-separator0">|</span>
+            <!--<a href="quienes-somos.html" class="fade-in delay-link1" style="--animation-delay: 3s;">
+                <span class="link-text">QUIÉNES SOMOS</span>
+            </a>
+            <span class="separator fade-in delay-separator">|</span>-->
+            <a href="mailto:contacto@blackbelt.cl" class="fade-in delay-link1" style="--animation-delay: 3s;">
+                <span class="link-text">CONTACTO</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
